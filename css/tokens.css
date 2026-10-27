@@ -1,0 +1,33 @@
+/* Karaokat v2 — tokens.
+ * Los colores tienen un papel, como en un karaoke de dúo:
+ * blanco = letra por cantar, cian = lo que suena ahora, magenta = segunda línea
+ * (romanización o traducción), amarillo = avisos del editor. Nada más.
+ */
+:root{
+  --bg:#07070B; --bg-2:#0D0E16; --bg-3:#141522;
+  --line:rgba(236,240,255,.10); --line-2:rgba(236,240,255,.18);
+  --glass-bg:rgba(16,17,28,.62); --glass:blur(18px) saturate(170%);
+
+  --text:#F4F6FB; --text-2:#A9B1C6; --text-3:#7E879D;
+
+  --sung:#00E5FF;        /* lo que se está cantando */
+  --second:#FF2BD6;      /* segunda línea: romanización o traducción */
+  --warn:#FFD84A;        /* tramo dudoso en Calibrar */
+  --ink:#041014;         /* texto sobre cian */
+
+  --r-s:6px; --r-m:10px; --r-l:16px; --r-pill:999px;
+  --ease:cubic-bezier(.16,1,.3,1);          /* salida exponencial */
+  --ease-eco:cubic-bezier(.33,1,.68,1);
+
+  --f-display:"Dela Gothic One","Black Han Sans",system-ui,sans-serif;
+  --f-body:"Atkinson Hyperlegible Next","Atkinson Hyperlegible",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --f-lyric:"Dela Gothic One",system-ui,sans-serif;
+  --f-jp:"Dela Gothic One",sans-serif;
+  --f-kr:"Black Han Sans",sans-serif;
+
+  --gutter:20px;
+  --maxw:1200px;
+  --bar-h:64px;
+}
+@media (min-width:720px){:root{--gutter:40px}}

@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karaokat — Convierte cualquier canción en karaoke</title>
+  <meta name="description" content="Sube tu audio y tu letra: Karaokat quita la voz, sincroniza cada palabra y crea el video. Con romanización para japonés y coreano.">
+  <meta name="theme-color" content="#07070B">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Karaokat — Karaoke con letra palabra por palabra">
+  <meta property="og:description" content="Sube tu audio y tu letra. Karaokat quita la voz, sincroniza cada palabra y crea el video.">
+  <meta property="og:image" content="assets/img/og-1200x630.jpg">
+  <meta property="og:locale" content="es_LA">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/cat-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/cat-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Atkinson+Hyperlegible+Next:wght@400;700&family=Black+Han+Sans&family=JetBrains+Mono:wght@500&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <header class="top">
+    <div class="wrap top-row">
+      <a class="brand" href="#intro" aria-label="Karaokat, inicio">
+        <picture>
+          <source srcset="assets/img/logo-128.webp" type="image/webp">
+          <img src="assets/img/logo-128.png" alt="" width="40" height="40">
+        </picture>
+        <span>Karaokat</span>
+      </a>
+      <p class="top-note">Para Windows · 3 canciones gratis al mes</p>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- INTRO: la oferta y el producto en tus manos -->
+    <section class="intro" id="intro" data-part="Intro" data-name="Así se ve">
+      <div class="wrap intro-grid">
+        <h1 class="sing" data-sing="load">
+          <span class="ln">Cualquier canción.</span>
+          <span class="ln">Tu karaoke.</span>
+          <span class="ln">En minutos.</span>
+        </h1>
+        <div class="intro-copy">
+          <p class="lead">Súbela y obtén tu video con la letra encendiéndose al ritmo, palabra por palabra. Hasta en japonés y coreano.</p>
+          <div class="actions">
+            <a class="btn btn-primary btn-lg" href="#descargar" data-cta="hero">Descargar gratis</a>
+            <a class="news" href="#doble-letra">Nuevo: letra original + romanización</a>
+          </div>
+        </div>
+
+        <div class="booth" id="booth">
+          <div class="screen screen-hero" role="img" aria-label="Demostración: líneas de una canción original pasan en carrusel y se iluminan en karaoke, cada una con un efecto distinto.">
+            <img class="screen-photo" src="assets/img/fondo-demo.webp" alt="" width="1600" height="1000" fetchpriority="high">
+            <div class="reel-window" aria-hidden="true"><div class="reel" id="hero-reel"></div></div>
+            <p class="screen-tag" aria-hidden="true">Efecto: <b id="hero-fx">Barrido</b></p>
+          </div>
+        </div>
+        <ul class="sing-in" aria-label="Siete idiomas">
+          <li lang="ja"><b>歌って</b><span>Japonés</span></li>
+          <li lang="ko"><b>노래해</b><span>Coreano</span></li>
+          <li lang="en"><b>Sing</b><span>Inglés</span></li>
+          <li><b>Canta</b><span>Español</span></li>
+          <li lang="pt"><b>Canta</b><span>Portugués</span></li>
+          <li lang="fr"><b>Chante</b><span>Francés</span></li>
+          <li lang="it"><b>Canta</b><span>Italiano</span></li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- VERSO 1: cómo funciona, escrito como un archivo de letra con tiempos -->
+    <section class="verse" id="como-funciona" data-part="Verso 1" data-name="Cómo funciona">
+      <div class="wrap">
+        <h2 class="sing">De tu canción al video, en cuatro líneas</h2>
+        <p class="sub">Así lee Karaokat tu canción: cada línea con su tiempo exacto. Tú pones la fruta, Karaokat hace el jugo.</p>
+        <ol class="sheet">
+          <li>
+            <time class="mono">[00:12.40]</time>
+            <p class="sing">Subes la canción y pegas la letra</p>
+            <span>Karaokat reconoce el idioma solo.</span>
+          </li>
+          <li>
+            <time class="mono">[00:16.80]</time>
+            <p class="sing">Separa la voz y sincroniza cada palabra</p>
+            <span>Mientras procesa, eliges el fondo del video.</span>
+          </li>
+          <li>
+            <time class="mono">[00:21.10]</time>
+            <p class="sing">Eliges efecto, color y tipografía</p>
+            <span>Si algo se adelanta, lo arrastras a su lugar. Lo que ves es lo que exportas.</span>
+          </li>
+          <li>
+            <time class="mono">[00:25.60]</time>
+            <p class="sing">Exportas tu video y a cantar</p>
+            <span>En 720p o 1080p, con la pista instrumental o con guía de voz.</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ESTRIBILLO: la doble letra, lo que nadie más hace -->
+    <section class="chorus" id="doble-letra" data-part="Estribillo" data-name="Doble letra">
+      <div class="wrap chorus-head">
+        <h2 class="sing">Canta en japonés o coreano aunque todavía no lo leas</h2>
+        <p class="sub">La letra original y su romanización se iluminan juntas, sílaba por sílaba. También puedes poner la traducción. Para fans del J‑pop, el K‑pop y el anime, y para quien aprende idiomas cantando.</p>
+        <div class="seg" role="tablist" aria-label="Idioma de la demo" id="dual-tabs">
+          <button role="tab" type="button" data-lang="ja" aria-selected="true">Japonés + romaji</button>
+          <button role="tab" type="button" data-lang="ko">Coreano + romanizado</button>
+        </div>
+      </div>
+      <div class="wrap-wide">
+        <div class="screen screen-chorus">
+          <div class="screen-video video-night" aria-hidden="true"></div>
+          <div id="dual-karaoke" class="karaoke-dual" role="img" aria-label="Demostración de doble letra: original arriba y romanización abajo, iluminándose a la vez."></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VERSO 2: efectos como un listado de canciones -->
+    <section class="verse verse-fx" id="efectos" data-part="Verso 2" data-name="Efectos">
+      <div class="wrap fx-grid">
+        <div>
+          <h2 class="sing">Siete formas de encender la letra</h2>
+          <p class="sub">Elige uno y míralo en vivo. Es el mismo efecto que sale en tu video.</p>
+          <ol class="setlist" role="tablist" aria-orientation="vertical" aria-label="Efectos de karaoke" id="fx-tabs">
+            <li><button role="tab" type="button" data-fx="barrido"><b>Barrido</b><span>Un relleno continuo recorre cada palabra, justo lo que dura.</span></button></li>
+            <li><button role="tab" type="button" data-fx="eco" aria-selected="true"><b>Eco difuminado</b><span>Cada sílaba deja un eco que crece y se difumina.</span></button></li>
+            <li><button role="tab" type="button" data-fx="vapor"><b>Vapor</b><span>La sílaba se enciende y se evapora hacia arriba.</span></button></li>
+            <li><button role="tab" type="button" data-fx="pop"><b>Pop</b><span>Un saltito al cantarse, y se asienta al instante.</span></button></li>
+            <li><button role="tab" type="button" data-fx="bolita"><b>Bolita</b><span>La pelotita que salta de sílaba en sílaba.</span></button></li>
+            <li><button role="tab" type="button" data-fx="neon"><b>Neón</b><span>La palabra se rellena y brilla más mientras la cantas.</span></button></li>
+            <li><button role="tab" type="button" data-fx="aparecer"><b>Aparecer</b><span>Las palabras aparecen una a una, en el momento exacto.</span></button></li>
+          </ol>
+        </div>
+        <div class="fx-sticky">
+          <div class="screen screen-fx">
+            <div class="screen-video video-dusk" aria-hidden="true"></div>
+            <div id="fx-karaoke" class="karaoke-md" role="tabpanel" aria-label="Vista previa del efecto"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUENTE: donde algo se desafina y se arregla -->
+    <section class="bridge" id="calibrar" data-part="Puente" data-name="Calibrar">
+      <div class="wrap">
+        <h2 class="sing">Si algo se adelanta, lo arreglas en segundos</h2>
+        <p class="sub">La sincronización acierta casi siempre. Para el «casi» está Calibrar. Pruébalo: la palabra en amarillo llega tarde. Arrástrala hasta la marca.</p>
+
+        <div class="editor">
+          <div class="editor-lines" aria-hidden="true">
+            <span class="mono">00:41.20</span><span>Esta noche la ciudad canta conmigo</span>
+            <span class="mono">00:44.60</span><span class="is-cur" id="cal-line">cada palabra brilla justo a <em id="cal-word">tiempo</em></span>
+            <span class="mono">00:48.10</span><span>y si el ritmo se escapa, lo atrapo</span>
+          </div>
+          <div class="editor-track" id="cal-track">
+            <svg class="waveform" id="cal-wave" viewBox="0 0 400 60" preserveAspectRatio="none" aria-hidden="true"></svg>
+            <span class="target" aria-hidden="true" style="--x:56"></span>
+            <div class="blocks">
+              <i style="--x:2;--w:9">cada</i><i style="--x:12;--w:14">palabra</i><i style="--x:27;--w:11">brilla</i><i style="--x:40;--w:10">justo</i><i style="--x:51;--w:4">a</i>
+              <button type="button" class="doubt" id="cal-block" style="--x:68;--w:16" aria-label="Palabra «tiempo»: muévela con las flechas hasta la marca">tiempo</button>
+            </div>
+          </div>
+          <p class="editor-msg" id="cal-msg" role="status">Tramo dudoso: «tiempo» entra 0,5 s tarde.</p>
+        </div>
+
+        <ul class="notes">
+          <li><b>Tramos dudosos marcados.</b> Karaokat te señala en amarillo dónde conviene mirar; no tienes que revisar toda la canción.</li>
+          <li><b>Arrastra y escucha.</b> Mueves el inicio o el final de cada palabra y lo oyes al instante.</li>
+          <li><b>Vista previa idéntica.</b> Lo que ves en el editor es exactamente lo que sale en el video.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CORO FINAL: para quién -->
+    <section class="verse who" id="para-quien" data-part="Coro" data-name="Para quién">
+      <div class="wrap">
+        <h2 class="sing">Hecho para quien canta, aprende o crea</h2>
+        <ul class="voices">
+          <li>
+            <p class="sing">Tu opening favorito, con romaji y hangul romanizado</p>
+            <span>Fans de K‑pop, J‑pop y anime: karaoke palabra por palabra de esa canción que ningún catálogo tiene.</span>
+          </li>
+          <li>
+            <p class="sing">Practica japonés y coreano cantando</p>
+            <span>Estudiantes de idiomas: lees, escuchas y pronuncias al mismo ritmo.</span>
+          </li>
+          <li>
+            <p class="sing">De la canción al video en minutos</p>
+            <span>Creadores: letra animada lista para TikTok, Reels y Shorts, también en vertical 9:16.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- OUTRO: precios, preguntas y descarga -->
+    <section class="outro" id="precios" data-part="Outro" data-name="Precios">
+      <div class="wrap">
+        <h2 class="sing">Paga solo cuando cantas</h2>
+        <p class="sub">Cada video que renderizas usa créditos, y siempre ves el costo antes de gastar.</p>
+        <div class="seg" role="tablist" aria-label="Versión" id="price-tabs">
+          <button role="tab" type="button" data-plan="web" aria-selected="true">Web</button>
+          <button role="tab" type="button" data-plan="desk">Escritorio</button>
+        </div>
+
+        <ul class="tariff" id="tariff" data-plan="web">
+          <li class="tier">
+            <div class="tier-name"><h3>Gratis</h3><p class="amt">US$0</p></div>
+            <ul class="feat"><li>3 canciones al mes</li><li>Video en 720p</li><li>Marca de agua discreta</li><li>Todos los efectos</li></ul>
+            <a class="btn" href="#descargar" data-cta="price-free">Descargar gratis</a>
+          </li>
+          <li class="tier is-pick">
+            <div class="tier-name"><h3>Créditos</h3><p class="amt">US$4,99 <small>por 10 canciones</small></p><p class="pick">El más elegido</p></div>
+            <ul class="feat">
+              <li>Sin suscripción</li>
+              <li class="web-only">Video en 1080p</li>
+              <li class="desk-only">1080p sin recargo</li>
+              <li class="desk-only">Procesar cuesta menos créditos</li>
+              <li>Sin marca de agua</li>
+              <li>4K con crédito extra</li>
+            </ul>
+            <a class="btn btn-primary" href="#descargar" data-cta="price-credits">Comprar créditos</a>
+          </li>
+          <li class="tier">
+            <div class="tier-name"><h3>Creador</h3><p class="amt">US$7,99 <small>al mes</small></p></div>
+            <ul class="feat"><li>Créditos mensuales incluidos</li><li>1080p sin marca de agua</li><li>Formato vertical 9:16</li><li class="desk-only">Mismos créditos en escritorio y web</li></ul>
+            <a class="btn" href="#descargar" data-cta="price-creator">Elegir Creador</a>
+          </li>
+        </ul>
+        <p class="note">Precios en dólares estadounidenses. Los créditos sirven igual en la web y en la app de escritorio.</p>
+      </div>
+
+      <div class="wrap faq" id="preguntas">
+        <h2 class="sing">Lo que todos preguntan</h2>
+        <div class="faq-list">
+          <details>
+            <summary>¿Qué idiomas reconoce?</summary>
+            <p>Japonés, coreano, inglés, español, portugués, francés e italiano. En japonés y coreano puedes mostrar además la romanización o una traducción.</p>
+          </details>
+          <details>
+            <summary>¿Karaokat trae las canciones o las letras?</summary>
+            <p>No. Karaokat es una herramienta, como un editor de video: tú subes el audio y pegas o confirmas la letra.</p>
+          </details>
+          <details>
+            <summary>¿Puedo subir mis videos a YouTube o TikTok?</summary>
+            <p>Puedes, pero ojo: si la canción no es tuya, la plataforma puede reclamar los derechos o silenciar el video. Con música propia, libre de derechos o con licencia, no hay problema.</p>
+          </details>
+          <details>
+            <summary>¿Qué computador necesito?</summary>
+            <p>Windows 10 u 11. Si tienes una tarjeta gráfica NVIDIA, procesa mucho más rápido; si no, funciona igual con el procesador, solo que tarda más.</p>
+          </details>
+          <details>
+            <summary>¿Qué pasa con mis archivos?</summary>
+            <p>En la app de escritorio todo se procesa en tu computador. En la web, tus archivos se usan solo para crear tu video y puedes borrarlos cuando quieras.</p>
+          </details>
+          <details>
+            <summary>¿Y si la sincronización falla en una parte?</summary>
+            <p>Abres Calibrar, miras los tramos marcados en amarillo y arrastras la palabra a su lugar, como en el puente de esta página.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="wrap final" id="descargar">
+        <img src="assets/img/logo-256.webp" alt="Logo de Karaokat: gato negro de neón cantando con un micrófono rojo" width="112" height="112" loading="lazy">
+        <h2 class="sing">Tu próxima canción ya tiene karaoke</h2>
+        <p class="sub">Descarga la app para Windows y crea tu primer video hoy.</p>
+        <a class="btn btn-primary btn-lg" href="#" data-cta="final" id="download-link">Descargar gratis</a>
+        <p class="fine">Windows 10 u 11, con o sin tarjeta gráfica NVIDIA.</p>
+
+        <form class="mail" id="waitlist" novalidate>
+          <label for="mail-input">¿Usas Mac o prefieres el navegador? Te avisamos cuando salga la versión web.</label>
+          <div class="mail-field">
+            <input id="mail-input" type="email" name="email" autocomplete="email" placeholder="tu@correo.com" required>
+            <button class="btn" type="submit">Avísame</button>
+          </div>
+          <p class="mail-msg" id="mail-msg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-row">
+      <p class="foot-brand">Karaokat</p>
+      <nav aria-label="Legal">
+        <a href="#">Términos</a>
+        <a href="#">Privacidad</a>
+        <a href="mailto:hola@karaokat.app">Contacto</a>
+      </nav>
+      <p class="rights">Karaokat no incluye ni distribuye canciones. Cada usuario es responsable de tener los derechos del audio que sube. Las demos de esta página usan música y letras originales.</p>
+      <p class="copy">© 2026 Karaokat</p>
+    </div>
+  </footer>
+
+  <!-- La página es una canción: esta barra es su línea de tiempo y su menú -->
+  <nav class="track" aria-label="Secciones de la página">
+    <p class="track-now" aria-live="off"><b id="track-part">Intro</b><span id="track-name">Así se ve</span></p>
+    <ol class="track-segs" id="track-segs"></ol>
+    <span class="track-time mono" id="track-time" aria-hidden="true">00:00 / 03:30</span>
+    <a class="btn btn-primary btn-sm" href="#descargar" data-cta="track">Descargar gratis</a>
+  </nav>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
